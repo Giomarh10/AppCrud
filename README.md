@@ -29,17 +29,20 @@ This application uses a database to store orders. I used Laragon Full 6.0 for lo
 
 <img width="490" alt="image" src="https://github.com/Giomarh10/AppCrud/assets/112275192/f6f7d2ec-abfe-44a7-931e-f1ea111f4b36">
 
-### Installation
+### Usage instructions
 
 1. Clone the repository:
-
 ```bash
 git clone https://github.com/Giomarh10/AppCrud.git
+```
 
+2. Run the following commands:
+```bash
 cd orders-app
 npm install
 npm start
 
 cd server
 node index.js
+```
 
