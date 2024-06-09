@@ -34,7 +34,7 @@ This application uses a database to store orders. I used Laragon Full 6.0 for lo
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/orders-management-app.git
+git clone https://github.com/Giomarh10/AppCrud.git
 
 cd orders-app
 npm install
