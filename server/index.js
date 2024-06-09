@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const cors = require('cors');
 const mysql = require('mysql');
 
@@ -24,7 +23,7 @@ db.connect(err => {
 });
 
 // Get all orders
-app.get('/ordenes', (req, res) => {
+app.get('/fetch', (req, res) => {
     db.query('SELECT * FROM orders',
     (err, results) => {
         if (err) {
@@ -72,7 +71,7 @@ app.put('/update/:id', (req, res) => {
 });
   
 // Delete order
-app.delete('/eliminar/:id', (req, res) => {
+app.delete('/delete/:id', (req, res) => {
   const sql = `DELETE FROM orders WHERE ID = ${req.params.id}`;
   db.query(sql, (err, result) => {
     if (err) {
@@ -86,7 +85,7 @@ app.delete('/eliminar/:id', (req, res) => {
 
 
 // Get single order
-app.get('/obtener/:id', (req, res) => {
+app.get('/get/:id', (req, res) => {
   const sql = `SELECT * FROM orders WHERE id = ${req.params.id}`;
   db.query(sql, (err, result) => {
     if (err) {

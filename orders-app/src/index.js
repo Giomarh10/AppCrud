@@ -6,6 +6,7 @@ import MyOrders from './views/MyOrders';
 import AddEditOrder from './views/AddEditOrder';
 import './index.css';
 
+// Create the router with defined routes
 const router=createBrowserRouter([
   {
   path:"/",
@@ -21,10 +22,11 @@ const router=createBrowserRouter([
   }
 ])
 
+// Get the root element from the DOM
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// Render the app within the root element
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
     <RouterProvider router={router}/>
   </React.StrictMode>
 );
