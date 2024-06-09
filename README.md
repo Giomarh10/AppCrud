@@ -18,10 +18,28 @@ To get started with this project, follow the steps below:
 - Node.js and npm installed on your machine.
 - A running backend server to handle API requests (not provided in this repository).
 
+### Dependencies
+- React
+- React Router DOM
+- Axios
+- Bootstrap
+
+### DataBase Setup
+This application uses a database to store orders. I used Laragon Full 6.0 for local development.
+
+<img width="490" alt="image" src="https://github.com/Giomarh10/AppCrud/assets/112275192/f6f7d2ec-abfe-44a7-931e-f1ea111f4b36">
+
 ### Installation
 
 1. Clone the repository:
 
 ```bash
 git clone https://github.com/yourusername/orders-management-app.git
-cd orders-management-app
+
+cd orders-app
+npm install
+npm start
+
+cd server
+node index.js
+
